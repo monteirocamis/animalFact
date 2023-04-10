@@ -25,10 +25,10 @@ onClick={displayFact}
 /> )
 };
 
-Function displayFact(event) {
+function displayFact(event) {
 const selectedAnimal =  event.target.alt;
 const animalInfo = animals[selectedAnimal];
-const optionIndex = Math.floor(Math.random()animalInfo.facts.length);
+const optionIndex = Math.floor(Math.random() * animalInfo.facts.length);
 
 const funFact = animalInfo.facts[optionIndex];
 document.getElementById('fact').innerHTML = funFact
